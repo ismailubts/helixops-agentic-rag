@@ -25,7 +25,7 @@ def seed_chroma_db():
             Key Components:
             - Vector Database: ChromaDB for efficient similarity search
             - Document Processing: Automated chunking and embedding
-            - LLM Integration: OpenAI GPT models for generation
+            - LLM Integration: Gemini 2.5 Flash for generation
             - Self-Correction Loop: Automatic relevance checking and fallback mechanisms
             """,
             "metadata": {"source": "corporate_overview", "company": "TechFlow AI"}
@@ -42,8 +42,8 @@ def seed_chroma_db():
             - LangChain v0.3: Core framework for RAG operations
             - LangGraph: Agent orchestration with conditional routing
             - ChromaDB: Persistent vector storage with metadata filtering
-            - OpenAI Embeddings: Text-to-vector conversion
-            - GPT-4o-mini: Efficient generation and document grading
+            - Google Native Embeddings: Text-to-vector conversion
+            - Gemini 2.5 Flash: Efficient generation and document grading
             
             Performance Metrics:
             - Retrieval Latency: <200ms for typical queries
@@ -103,6 +103,39 @@ def seed_chroma_db():
             "metadata": {"source": "deployment_options", "company": "TechFlow AI"}
         },
         {
+            "id": "techflow_migration_2026",
+            "content": """
+            TechFlow AI 2026 Gemini Migration Performance Update
+            
+            The 2026 migration to Gemini-native architecture represents a significant leap in RAG system performance 
+            and operational efficiency. This comprehensive migration focused on leveraging Google's advanced AI 
+            infrastructure while maintaining our patented self-correction mechanisms.
+            
+            Key Migration Benefits:
+            - 25% reduction in overall system latency across all query types
+            - Improved cross-node orchestration through Gemini's native graph processing
+            - Enhanced token efficiency reducing operational costs by 30%
+            - Native integration with Google's vector embedding services
+            - Zero-downtime migration maintaining 99.9% service availability
+            
+            Technical Improvements:
+            - Gemini 2.5 Flash: 40% faster response generation compared to previous models
+            - Google Native Embeddings: 35% improvement in semantic similarity accuracy
+            - Optimized LangGraph conditional routing with Gemini's enhanced reasoning
+            - Enhanced self-correction loop with improved relevance assessment
+            
+            Performance Metrics Post-Migration:
+            - End-to-end latency: Reduced from 450ms to 337ms (25% improvement)
+            - Query throughput: Increased by 45% with Gemini's parallel processing
+            - Relevance accuracy: Improved from 94% to 96.5%
+            - System reliability: Maintained 99.9% uptime with enhanced error recovery
+            
+            The migration ensures TechFlow AI remains at the forefront of enterprise RAG solutions 
+            while delivering measurable performance improvements to our global customer base.
+            """,
+            "metadata": {"source": "migration_update", "company": "TechFlow AI"}
+        },
+        {
             "id": "techflow_cases",
             "content": """
             TechFlow AI Customer Success Stories
@@ -133,9 +166,10 @@ def seed_chroma_db():
     # Create metadata file for ChromaDB simulation
     metadata = {
         "collection_name": "techflow_documents",
-        "embedding_function": "openai",
+        "embedding_function": "google_native",
         "total_documents": len(documents),
-        "created_at": "2026-02-20"
+        "created_at": "2026-02-21",
+        "migration_status": "gemini_25_native"
     }
     
     with open("./chroma_db/metadata.json", "w", encoding="utf-8") as f:

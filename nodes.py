@@ -1,7 +1,7 @@
 from typing import List
 import json
 from langchain_core.messages import AIMessage, HumanMessage
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from state import AgentState
 
 
@@ -40,7 +40,7 @@ def retrieve(state: AgentState) -> AgentState:
 
 def grade_documents(state: AgentState) -> AgentState:
     """Grade documents for relevance using LLM."""
-    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
     
     # Get the latest human message and documents
     human_messages = [msg for msg in state["messages"] if isinstance(msg, HumanMessage)]
@@ -77,7 +77,7 @@ def grade_documents(state: AgentState) -> AgentState:
 
 def generate(state: AgentState) -> AgentState:
     """Generate RAG answer using retrieved documents."""
-    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.7)
     
     # Get the latest human message and documents
     human_messages = [msg for msg in state["messages"] if isinstance(msg, HumanMessage)]
