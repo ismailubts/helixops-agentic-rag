@@ -1,0 +1,15 @@
+# API Keys and Secrets
+.env
+
+# Local Databases and Mock Data
+chroma_db/
+mock_db/
+
+# Python internal files
+__pycache__/
+*.pyc
+
+# Environment and OS files
+.venv/
+env/
+.DS_Store
