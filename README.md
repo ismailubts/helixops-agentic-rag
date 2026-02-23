@@ -1,4 +1,4 @@
-# TechFlow AI: Self-Correcting Agentic RAG (Gemini 2.5 Stack)
+# Self-Correcting Agentic RAG (Gemini 2.5 Stack)
 
 A production-grade Retrieval-Augmented Generation (RAG) system featuring enterprise-grade reliability with Google Gemini 2.5 Flash integration and patented self-correction technology.
 
@@ -22,7 +22,7 @@ TechFlow AI represents the cutting edge of enterprise RAG systems, having succes
 ### Architecture Components
 ```
 ┌─────────────────────────────────────────────────────────┐
-│              TechFlow AI RAG Architecture          │
+│              Agentic AI RAG Architecture          │
 ├─────────────────────────────────────────────────────────┤
 │  📱 Query Layer                                   │
 │  ├─ LangGraph State Management                      │
