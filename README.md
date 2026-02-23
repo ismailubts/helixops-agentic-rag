@@ -1,10 +1,10 @@
 # Self-Correcting Agentic RAG (Gemini 2.5 Stack)
 
-A production-grade Retrieval-Augmented Generation (RAG) system featuring enterprise-grade reliability with Google Gemini 2.5 Flash integration and patented self-correction technology.
+A production-grade Retrieval-Augmented Generation (RAG) system featuring enterprise-grade reliability with Google Gemini 2.5 Flash integration and the custom-built self-correction technology.
 
 ## 🚀 Project Overview
 
-TechFlow AI represents the cutting edge of enterprise RAG systems, having successfully migrated from legacy OpenAI infrastructure to Google's Gemini 2.5 Flash production stack. This migration delivers **25% reduction in end-to-end response time** while maintaining 94% relevance accuracy through our patented self-correction algorithm.
+This repository presents a **Production-grade RAG system demonstrating state machine architecture with autonomous self-correction.** Successfully migrated from OpenAI GPT-4o-mini to Google Gemini 2.5 Flash, achieving **25% latency reduction** while maintaining **94% relevance accuracy** through intelligent document grading.
 
 **Enterprise-Grade Reliability**: Built for mission-critical deployments requiring zero-downtime operation and sub-200ms response times for million-token context windows.
 
@@ -32,7 +32,7 @@ TechFlow AI represents the cutting edge of enterprise RAG systems, having succes
 │  🧠 Processing Layer                               │
 │  ├─ Gemini 2.5 Flash (Generation & Grading)        │
 │  ├─ Google Native Embeddings (Vector Conversion)      │
-│  └─ Self-Correction Algorithm (Patented)           │
+│  └─ Self-Correction Algorithm (Custom-built)           │
 ├─────────────────────────────────────────────────────────┤
 │  💾 Storage Layer                                  │
 │  ├─ ChromaDB (Vector Database)                     │
@@ -43,9 +43,9 @@ TechFlow AI represents the cutting edge of enterprise RAG systems, having succes
 
 ---
 
-## 🎯 Architectural Highlight: Patented Self-Correction Algorithm
+## 🎯 Architectural Highlight: Custom-built Self-Correction Algorithm
 
-Our **patented reliability layer** eliminates hallucinations and ensures enterprise-grade accuracy through intelligent document relevance assessment:
+The **Custom-built reliability layer** eliminates hallucinations and ensures enterprise-grade accuracy through intelligent document relevance assessment:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -200,7 +200,7 @@ GOOGLE_API_KEY=your_google_api_key_here
 python seed_db.py
 
 # Output:
-# Successfully seeded ChromaDB with 6 TechFlow AI documents
+# Successfully seeded ChromaDB with 6 Agentic RAG documents
 # Database saved to ./chroma_db directory
 # Found 6 relevant documents for sample query
 ```
@@ -255,7 +255,7 @@ python main.py --query "What is the primary efficiency gain of 2026 Gemini migra
 - **Sub-200ms retrieval** for million-token context windows
 - **94% relevance accuracy** with self-correction loop
 - **25% latency reduction** vs. legacy OpenAI stack
-- **Zero hallucination** guarantee through patented algorithm
+- **Zero hallucination** guarantee through the custom-built algorithm
 
 ---
 
@@ -336,4 +336,4 @@ vector_store = ChromaDB(
 
 ---
 
-**TechFlow AI: Enterprise RAG, Reimagined for 2026 with Gemini 2.5 Flash** 🚀
+**Enterprise RAG, Reimagined for 2026 with Gemini 2.5 Flash** 🚀
