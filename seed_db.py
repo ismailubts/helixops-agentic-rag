@@ -6,19 +6,19 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def seed_chroma_db():
-    """Initialize mock database with TechFlow AI corporate documents (compatible version)."""
+    """Initialize mock database with HelixOps AI corporate documents (compatible version)."""
     
     # Create mock database directory
     os.makedirs("./chroma_db", exist_ok=True)
     
-    # TechFlow AI corporate documents
+    # HelixOps AI corporate documents
     documents = [
         {
-            "id": "techflow_overview",
+            "id": "helixops_overview",
             "content": """
-            TechFlow AI: Enterprise RAG Architecture Overview
+            HelixOps AI: Enterprise RAG Architecture Overview
             
-            TechFlow AI is a leading provider of enterprise-grade Retrieval-Augmented Generation (RAG) solutions. 
+            HelixOps AI is a leading provider of enterprise-grade Retrieval-Augmented Generation (RAG) solutions. 
             Our architecture leverages advanced vector databases, large language models, and intelligent document 
             processing pipelines to deliver accurate, context-aware responses for enterprise applications.
             
@@ -28,12 +28,12 @@ def seed_chroma_db():
             - LLM Integration: Gemini 2.5 Flash for generation
             - Self-Correction Loop: Automatic relevance checking and fallback mechanisms
             """,
-            "metadata": {"source": "corporate_overview", "company": "TechFlow AI"}
+            "metadata": {"source": "corporate_overview", "company": "HelixOps AI"}
         },
         {
-            "id": "techflow_specs",
+            "id": "helixops_specs",
             "content": """
-            TechFlow AI RAG System Technical Specifications
+            HelixOps AI RAG System Technical Specifications
             
             Our RAG system implements a sophisticated self-correction mechanism that ensures high-quality 
             responses through intelligent document relevance assessment.
@@ -50,12 +50,12 @@ def seed_chroma_db():
             - Relevance Accuracy: 94% with self-correction loop
             - Document Processing: 1000+ documents per minute
             """,
-            "metadata": {"source": "technical_specs", "company": "TechFlow AI"}
+            "metadata": {"source": "technical_specs", "company": "HelixOps AI"}
         },
         {
-            "id": "techflow_algorithm",
+            "id": "helixops_algorithm",
             "content": """
-            TechFlow AI Self-Correction Algorithm
+            HelixOps AI Self-Correction Algorithm
             
             The self-correction loop is our patented approach to handling irrelevant or insufficient retrieved documents.
             
@@ -73,12 +73,12 @@ def seed_chroma_db():
             - Reduces user frustration with irrelevant responses
             - Adapts to domain-specific terminology
             """,
-            "metadata": {"source": "algorithm_details", "company": "TechFlow AI"}
+            "metadata": {"source": "algorithm_details", "company": "HelixOps AI"}
         },
         {
-            "id": "techflow_deployment",
+            "id": "helixops_deployment",
             "content": """
-            TechFlow AI Enterprise Deployment Options
+            HelixOps AI Enterprise Deployment Options
             
             We offer flexible deployment solutions tailored to enterprise needs:
             
@@ -100,12 +100,12 @@ def seed_chroma_db():
             - Seamless migration path
             - Cost optimization through intelligent routing
             """,
-            "metadata": {"source": "deployment_options", "company": "TechFlow AI"}
+            "metadata": {"source": "deployment_options", "company": "HelixOps AI"}
         },
         {
-            "id": "techflow_migration_2026",
+            "id": "helixops_migration_2026",
             "content": """
-            TechFlow AI 2026 Gemini Migration Performance Update
+            HelixOps AI 2026 Gemini Migration Performance Update
             
             The 2026 migration to Gemini-native architecture represents a significant leap in RAG system performance 
             and operational efficiency. This comprehensive migration focused on leveraging Google's advanced AI 
@@ -130,15 +130,15 @@ def seed_chroma_db():
             - Relevance accuracy: Improved from 94% to 96.5%
             - System reliability: Maintained 99.9% uptime with enhanced error recovery
             
-            The migration ensures TechFlow AI remains at the forefront of enterprise RAG solutions 
+            The migration ensures HelixOps AI remains at the forefront of enterprise RAG solutions 
             while delivering measurable performance improvements to our global customer base.
             """,
-            "metadata": {"source": "migration_update", "company": "TechFlow AI"}
+            "metadata": {"source": "migration_update", "company": "HelixOps AI"}
         },
         {
-            "id": "techflow_cases",
+            "id": "helixops_cases",
             "content": """
-            TechFlow AI Customer Success Stories
+            HelixOps AI Customer Success Stories
             
             Global Financial Services Firm:
             - Challenge: Processing 50,000+ financial documents for customer service
@@ -155,7 +155,7 @@ def seed_chroma_db():
             - Solution: Multi-language RAG with technical terminology optimization
             - Results: 70% reduction in support tickets, 92% engineer adoption rate
             """,
-            "metadata": {"source": "case_studies", "company": "TechFlow AI"}
+            "metadata": {"source": "case_studies", "company": "HelixOps AI"}
         }
     ]
     
@@ -165,7 +165,7 @@ def seed_chroma_db():
     
     # Create metadata file for ChromaDB simulation
     metadata = {
-        "collection_name": "techflow_documents",
+        "collection_name": "helixops_documents",
         "embedding_function": "google_native",
         "total_documents": len(documents),
         "created_at": "2026-02-21",
@@ -175,12 +175,12 @@ def seed_chroma_db():
     with open("./chroma_db/metadata.json", "w", encoding="utf-8") as f:
         json.dump(metadata, f, indent=2)
     
-    print(f"Successfully seeded ChromaDB with {len(documents)} TechFlow AI documents")
+    print(f"Successfully seeded ChromaDB with {len(documents)} HelixOps AI documents")
     print("Database saved to ./chroma_db directory")
     
     # Test the database
     print("\nTesting database with sample query...")
-    query = "TechFlow AI RAG architecture"
+    query = "HelixOps AI RAG architecture"
     
     # Simple keyword matching for mock retrieval
     relevant_docs = []

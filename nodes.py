@@ -147,17 +147,17 @@ def grade_documents_mock(state: AgentState) -> AgentState:
     query = human_messages[-1].content.lower()
     documents_text = " ".join(state["documents"]).lower()
     
-    # TechFlow AI relevant keywords
-    techflow_keywords = ["techflow", "rag", "architecture", "deployment", "algorithm", "system", "enterprise", "solution"]
+    # HelixOps AI relevant keywords
+    helixops_keywords = ["helixops", "rag", "architecture", "deployment", "algorithm", "system", "enterprise", "solution"]
     
-    # Check if query contains TechFlow AI related terms
-    query_has_techflow_terms = any(keyword in query for keyword in techflow_keywords)
+    # Check if query contains HelixOps AI related terms
+    query_has_helixops_terms = any(keyword in query for keyword in helixops_keywords)
     
     # Check if documents contain relevant information
-    docs_have_techflow_info = any(keyword in documents_text for keyword in techflow_keywords)
+    docs_have_helixops_info = any(keyword in documents_text for keyword in helixops_keywords)
     
-    # Documents are relevant only if both query and documents are about TechFlow AI
-    state["is_relevant"] = query_has_techflow_terms and docs_have_techflow_info
+    # Documents are relevant only if both query and documents are about HelixOps AI
+    state["is_relevant"] = query_has_helixops_terms and docs_have_helixops_info
     
     return state
 
@@ -175,7 +175,7 @@ def generate_mock(state: AgentState) -> AgentState:
         # Generate a mock response based on the query and documents
         if "architecture" in query.lower():
             response = """
-            Based on the retrieved documents, TechFlow AI's RAG architecture includes:
+            Based on the retrieved documents, HelixOps AI's RAG architecture includes:
             
             Core Components:
             - Vector Database: ChromaDB for efficient similarity search
@@ -188,7 +188,7 @@ def generate_mock(state: AgentState) -> AgentState:
             """
         elif "deployment" in query.lower():
             response = """
-            TechFlow AI offers flexible deployment solutions:
+            HelixOps AI offers flexible deployment solutions:
             
             Cloud-Based Solution:
             - Managed infrastructure with 99.9% uptime
@@ -207,7 +207,7 @@ def generate_mock(state: AgentState) -> AgentState:
             """
         elif "algorithm" in query.lower() or "self-correction" in query.lower():
             response = """
-            TechFlow AI's Self-Correction Algorithm:
+            HelixOps AI's Self-Correction Algorithm:
             
             Steps:
             1. Initial document retrieval from vector database
@@ -224,17 +224,17 @@ def generate_mock(state: AgentState) -> AgentState:
             """
         else:
             response = f"""
-            Based on the retrieved documents about TechFlow AI, I found relevant information 
+            Based on the retrieved documents about HelixOps AI, I found relevant information 
             regarding your query about "{query}". The documents cover various aspects of 
-            TechFlow AI's enterprise RAG solutions, including technical specifications, 
+            HelixOps AI's enterprise RAG solutions, including technical specifications, 
             deployment options, and customer success stories.
             """
     else:
         response = f"""
         I couldn't find relevant information about "{query}" in the current document database. 
-        The available documents focus on TechFlow AI's RAG architecture and enterprise solutions. 
+        The available documents focus on HelixOps AI's RAG architecture and enterprise solutions. 
         For more specific information, you might want to try a different query or consult 
-        the official TechFlow AI documentation.
+        the official HelixOps AI documentation.
         """
     
     # Add the AI response to messages

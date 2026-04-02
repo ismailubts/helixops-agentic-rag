@@ -11,14 +11,14 @@ def seed_mock_db():
     # Create mock database directory
     os.makedirs("./mock_db", exist_ok=True)
     
-    # TechFlow AI corporate documents
+    # HelixOps AI corporate documents
     documents = [
         {
-            "id": "techflow_overview",
+            "id": "helixops_overview",
             "content": """
-            TechFlow AI: Enterprise RAG Architecture Overview
+            HelixOps AI: Enterprise RAG Architecture Overview
             
-            TechFlow AI is a leading provider of enterprise-grade Retrieval-Augmented Generation (RAG) solutions. 
+            HelixOps AI is a leading provider of enterprise-grade Retrieval-Augmented Generation (RAG) solutions. 
             Our architecture leverages advanced vector databases, large language models, and intelligent document 
             processing pipelines to deliver accurate, context-aware responses for enterprise applications.
             
@@ -28,12 +28,12 @@ def seed_mock_db():
             - LLM Integration: OpenAI GPT models for generation
             - Self-Correction Loop: Automatic relevance checking and fallback mechanisms
             """,
-            "metadata": {"source": "corporate_overview", "company": "TechFlow AI"}
+            "metadata": {"source": "corporate_overview", "company": "HelixOps AI"}
         },
         {
-            "id": "techflow_specs",
+            "id": "helixops_specs",
             "content": """
-            TechFlow AI RAG System Technical Specifications
+            HelixOps AI RAG System Technical Specifications
             
             Our RAG system implements a sophisticated self-correction mechanism that ensures high-quality 
             responses through intelligent document relevance assessment.
@@ -50,12 +50,12 @@ def seed_mock_db():
             - Relevance Accuracy: 94% with self-correction loop
             - Document Processing: 1000+ documents per minute
             """,
-            "metadata": {"source": "technical_specs", "company": "TechFlow AI"}
+            "metadata": {"source": "technical_specs", "company": "HelixOps AI"}
         },
         {
-            "id": "techflow_algorithm",
+            "id": "helixops_algorithm",
             "content": """
-            TechFlow AI Self-Correction Algorithm
+            HelixOps AI Self-Correction Algorithm
             
             The self-correction loop is our patented approach to handling irrelevant or insufficient retrieved documents.
             
@@ -73,12 +73,12 @@ def seed_mock_db():
             - Reduces user frustration with irrelevant responses
             - Adapts to domain-specific terminology
             """,
-            "metadata": {"source": "algorithm_details", "company": "TechFlow AI"}
+            "metadata": {"source": "algorithm_details", "company": "HelixOps AI"}
         },
         {
-            "id": "techflow_deployment",
+            "id": "helixops_deployment",
             "content": """
-            TechFlow AI Enterprise Deployment Options
+            HelixOps AI Enterprise Deployment Options
             
             We offer flexible deployment solutions tailored to enterprise needs:
             
@@ -100,12 +100,12 @@ def seed_mock_db():
             - Seamless migration path
             - Cost optimization through intelligent routing
             """,
-            "metadata": {"source": "deployment_options", "company": "TechFlow AI"}
+            "metadata": {"source": "deployment_options", "company": "HelixOps AI"}
         },
         {
-            "id": "techflow_cases",
+            "id": "helixops_cases",
             "content": """
-            TechFlow AI Customer Success Stories
+            HelixOps AI Customer Success Stories
             
             Global Financial Services Firm:
             - Challenge: Processing 50,000+ financial documents for customer service
@@ -122,7 +122,7 @@ def seed_mock_db():
             - Solution: Multi-language RAG with technical terminology optimization
             - Results: 70% reduction in support tickets, 92% engineer adoption rate
             """,
-            "metadata": {"source": "case_studies", "company": "TechFlow AI"}
+            "metadata": {"source": "case_studies", "company": "HelixOps AI"}
         }
     ]
     
@@ -130,12 +130,12 @@ def seed_mock_db():
     with open("./mock_db/documents.json", "w", encoding="utf-8") as f:
         json.dump(documents, f, indent=2, ensure_ascii=False)
     
-    print(f"Successfully created mock database with {len(documents)} TechFlow AI documents")
+    print(f"Successfully created mock database with {len(documents)} HelixOps AI documents")
     print("Database saved to ./mock_db/documents.json")
     
     # Test the database
     print("\nTesting mock database with sample query...")
-    query = "TechFlow AI RAG architecture"
+    query = "HelixOps AI RAG architecture"
     
     # Simple keyword matching for mock retrieval
     relevant_docs = []
