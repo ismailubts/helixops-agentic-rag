@@ -62,9 +62,9 @@ def main():
     # Test queries
     test_queries = [
         {
-            "query": "Tell me about TechFlow AI's RAG architecture",
+            "query": "Tell me about HelixOps AI's RAG architecture",
             "expected_relevant": True,
-            "description": "Relevant query about TechFlow AI"
+            "description": "Relevant query about HelixOps AI"
         },
         {
             "query": "What is the weather like on Mars?",
@@ -78,7 +78,8 @@ def main():
         }
     ]
     
-    print("Testing Agentic RAG System Self-Correction Loop")
+    print("HelixOps RAG  |  Self-Correction Loop Tests")
+    print("Author: Aismail <aismail@7kingscode.com>")
     print("=" * 60)
     
     for i, test_case in enumerate(test_queries, 1):

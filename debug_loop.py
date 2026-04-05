@@ -60,7 +60,8 @@ def main():
     # Create the graph
     app = create_rag_graph()
     
-    print("Testing Self-Correction Loop with Debug")
+    print("HelixOps RAG  |  Self-Correction Debug Runner")
+    print("Author: Aismail <aismail@7kingscode.com>")
     print("=" * 50)
     
     # Test with irrelevant query

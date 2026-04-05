@@ -59,12 +59,13 @@ def main():
     # Create the graph
     app = create_rag_graph()
     
-    print("Testing Gemini 2.0 Migration (Mock Functions)")
+    print("HelixOps RAG  |  Gemini Migration Smoke Test")
+    print("Author: Aismail <aismail@7kingscode.com>")
     print("=" * 50)
     
     # Test queries
     test_queries = [
-        "Tell me about TechFlow AI's RAG architecture",
+        "Tell me about HelixOps AI's RAG architecture",
         "What are the specific 2026 Q3 projections for Tech Flow AI?",
         "How does the self-correction algorithm work?"
     ]

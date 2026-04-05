@@ -60,13 +60,14 @@ def main():
     app = create_rag_graph()
     
     # Example usage
-    print("Agentic RAG System with Self-Correction Loop")
+    print("HelixOps RAG  |  Self-Correcting Retrieval Agent")
+    print("Built by Aismail  ·  aismail@7kingscode.com")
     print("=" * 50)
     
     # Initial state with a user question
     initial_state = {
         "messages": [
-            HumanMessage(content="Tell me about TechFlow AI's RAG architecture")
+            HumanMessage(content="Tell me about HelixOps AI's RAG architecture")
         ],
         "documents": [],
         "is_relevant": False,

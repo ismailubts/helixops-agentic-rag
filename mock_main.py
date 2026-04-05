@@ -55,12 +55,13 @@ def main():
     app = create_rag_graph()
     
     # Example usage
-    print("Agentic RAG System with Self-Correction Loop (Mock Version)")
+    print("HelixOps RAG  |  Self-Correcting Retrieval Agent (Mock)")
+    print("Built by Aismail  ·  aismail@7kingscode.com")
     print("=" * 60)
     
     # Test queries
     test_queries = [
-        "Tell me about TechFlow AI's RAG architecture",
+        "Tell me about HelixOps AI's RAG architecture",
         "What are the deployment options?",
         "How does the self-correction algorithm work?"
     ]

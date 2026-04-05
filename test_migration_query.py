@@ -59,7 +59,8 @@ def main():
     # Create the graph
     app = create_rag_graph()
     
-    print("Testing 2026 Gemini Migration Efficiency Query")
+    print("HelixOps RAG  |  Migration Efficiency Query Test")
+    print("Author: Aismail <aismail@7kingscode.com>")
     print("=" * 50)
     
     # Test the specific query about 2026 migration efficiency
