@@ -105,9 +105,9 @@ def main():
         # Check if self-correction was triggered
         ai_messages = [msg for msg in result['messages'] if isinstance(msg, AIMessage)]
         if len(ai_messages) > 1:
-            print("✅ Self-correction loop triggered (multiple AI messages)")
+            print("[OK] Self-correction loop triggered (multiple AI messages)")
         elif len(ai_messages) == 1:
-            print("✅ Direct generation (no self-correction needed)")
+            print("[OK] Direct generation (no self-correction needed)")
         
         # Print final answer
         print("\nFinal Answer:")

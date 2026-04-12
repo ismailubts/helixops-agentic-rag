@@ -56,7 +56,7 @@ def main():
     
     # Example usage
     print("HelixOps RAG  |  Self-Correcting Retrieval Agent (Mock)")
-    print("Built by Aismail  ·  aismail@7kingscode.com")
+    print("Built by Aismail | aismail@7kingscode.com")
     print("=" * 60)
     
     # Test queries

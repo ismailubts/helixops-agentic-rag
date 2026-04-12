@@ -22,17 +22,17 @@ def update_env_file():
                     with open(env_file, 'w') as f:
                         f.write(new_content)
                     
-                    print("✅ Updated .env file: OPENAI_API_KEY → GOOGLE_API_KEY")
+                    print("[OK] Updated .env file: OPENAI_API_KEY -> GOOGLE_API_KEY")
                     return True
         
-        print("ℹ️  .env file already contains GOOGLE_API_KEY or no OPENAI_API_KEY found")
+        print("[INFO] .env file already contains GOOGLE_API_KEY or no OPENAI_API_KEY found")
         return False
     else:
         # Create new .env file
         with open(env_file, 'w') as f:
             f.write("GOOGLE_API_KEY=your_google_api_key_here")
         
-        print("✅ Created new .env file with GOOGLE_API_KEY")
+        print("[OK] Created new .env file with GOOGLE_API_KEY")
         return True
 
 if __name__ == "__main__":

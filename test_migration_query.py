@@ -98,11 +98,11 @@ def main():
             final_answer = message.content.lower()
     
     if "25%" in final_answer and "latency" in final_answer:
-        print("\n✅ SUCCESS: Answer correctly mentions 25% latency reduction!")
+        print("\n[OK] SUCCESS: Answer correctly mentions 25% latency reduction!")
     elif "25%" in final_answer:
-        print("\n⚠️  PARTIAL: Answer mentions 25% but not specifically latency reduction")
+        print("\n[WARN] PARTIAL: Answer mentions 25% but not specifically latency reduction")
     else:
-        print("\n❌ ISSUE: Answer does not mention 25% latency reduction")
+        print("\n[FAIL] ISSUE: Answer does not mention 25% latency reduction")
     
     print("=" * 50)
 
