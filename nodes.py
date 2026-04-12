@@ -180,7 +180,7 @@ def generate_mock(state: AgentState) -> AgentState:
             Core Components:
             - Vector Database: ChromaDB for efficient similarity search
             - Document Processing: Automated chunking and embedding
-            - LLM Integration: OpenAI GPT models for generation
+            - LLM Integration: Gemini 2.5 Flash for generation
             - Self-Correction Loop: Automatic relevance checking and fallback mechanisms
             
             The system implements a sophisticated self-correction mechanism that ensures 
