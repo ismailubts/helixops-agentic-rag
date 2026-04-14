@@ -1,6 +1,6 @@
-# HelixOps Agentic RAG
+# helixops-agentic-rag
 
-**Self-correcting Retrieval-Augmented Generation** powered by Google Gemini 2.5 Flash and LangGraph.
+**HelixOps Agentic RAG** — self-correcting Retrieval-Augmented Generation powered by Google Gemini 2.5 Flash and LangGraph.
 
 Built by **Aismail** · [aismail@7kingscode.com](mailto:aismail@7kingscode.com)
 
@@ -42,7 +42,7 @@ Query → Retrieve → Grade
 ## Project layout
 
 ```
-langgraph-agentic-rag/
+helixops-agentic-rag/
 ├── requirements.txt
 ├── state.py                 # AgentState definition
 ├── nodes.py                 # retrieve / grade / generate / web_search
