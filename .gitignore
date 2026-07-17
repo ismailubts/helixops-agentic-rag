@@ -1,15 +1,50 @@
-# API Keys and Secrets
+# Environment and secrets
 .env
+.env.*
+!.env.example
 
-# Local Databases and Mock Data
+# Virtual environments
+.venv/
+.venv*/
+venv/
+venv*/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python build and cache artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+nosetests.xml
+
+# Local databases and runtime data
 chroma_db/
 mock_db/
+*.db
+*.sqlite
+*.sqlite3
+*.pkl
+*.pickle
+*.log
 
-# Python internal files
-__pycache__/
-*.pyc
-
-# Environment and OS files
-.venv/
-env/
+# IDE and OS files
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
