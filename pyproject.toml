@@ -10,4 +10,4 @@ authors = [
 license = { text = "MIT" }
 
 [project.urls]
-Homepage = "https://github.com/aismail/helixops-agentic-rag"
+Homepage = "https://github.com/ismailubts/helixops-agentic-rag"
