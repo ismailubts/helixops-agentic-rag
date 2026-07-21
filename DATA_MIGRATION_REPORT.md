@@ -1,6 +1,6 @@
 # Data Migration Report - Gemini 2.5 Architecture Sync
 
-**Author:** Aismail (aismail@7kingscode.com)  
+**Author:** Abdul Ismail  
 **Project:** HelixOps Agentic RAG
 
 ## ✅ Migration Status: COMPLETE

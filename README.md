@@ -2,7 +2,7 @@
 
 **HelixOps Agentic RAG** — self-correcting Retrieval-Augmented Generation powered by Google Gemini 2.5 Flash and LangGraph.
 
-Built by **Aismail** · [aismail@7kingscode.com](mailto:aismail@7kingscode.com)
+Built by **Abdul Ismail** · https://github.com/ismailubts
 
 ---
 
@@ -129,8 +129,8 @@ vector_store = {
 
 ## Author
 
-**Aismail**  
-Email: aismail@7kingscode.com  
+**Abdul Ismail**  
+Repository: https://github.com/ismailubts/helixops-agentic-rag  
 
 ---
 

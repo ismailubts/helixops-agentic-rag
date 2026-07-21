@@ -1,6 +1,6 @@
 # OpenAI to Google Gemini 2.0 Migration Guide
 
-**Author:** Aismail (aismail@7kingscode.com)  
+**Author:** Abdul Ismail  
 **Project:** HelixOps Agentic RAG
 
 ## ✅ Migration Completed Successfully

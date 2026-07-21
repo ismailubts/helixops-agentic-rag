@@ -5,9 +5,8 @@ description = "HelixOps self-correcting agentic RAG with LangGraph and Gemini 2.
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-  { name = "Aismail", email = "aismail@7kingscode.com" },
+  { name = "Abdul Ismail" },
 ]
-license = { text = "MIT" }
 
 [project.urls]
 Homepage = "https://github.com/ismailubts/helixops-agentic-rag"
