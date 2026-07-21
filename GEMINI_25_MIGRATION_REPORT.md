@@ -1,6 +1,6 @@
 # Gemini 2.5 Migration - Final Validation Report
 
-**Author:** Aismail (aismail@7kingscode.com)  
+**Author:** Abdul Ismail  
 **Project:** HelixOps Agentic RAG
 
 ## ✅ Migration Status: COMPLETE

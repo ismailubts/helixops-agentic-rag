@@ -44,7 +44,10 @@ mock_db/
 *.log
 
 # IDE and OS files
-.vscode/
 .idea/
 .DS_Store
 Thumbs.db
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
